@@ -1,0 +1,534 @@
+<xml xmlns="https://developers.google.com/blockly/xml" version="15">
+  <block type="display_get_button_state" id="BTX{=)mAI3hqAm|B8dk@" disabled="true" x="-1433" y="-405">
+    <field name="instance_name">-</field>
+  </block>
+  <block type="display_get_button_state" id="[5QJMuUp[4[8`vYg1$U%" disabled="true" x="-1468" y="-369">
+    <field name="instance_name">-</field>
+  </block>
+  <block type="camera_on_color_detected" id="*Z0qZ$Xl32(;bBAR+_-a" x="-1663" y="-327">
+    <field name="instance_name">color_detector</field>
+    <statement name="statement">
+      <block type="controls_if" id="S*R:jEWX`C~B1UmJ8rU1">
+        <value name="IF0">
+          <block type="display_get_checkbox_state" id="G^Z~-~-f{[(@WzpOWXDo">
+            <field name="instance_name">txt_checkbox</field>
+            <field name="property_name">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="util_python" id="Dbmy+BLTUv$OEBjdC^U$">
+            <field name="value">if event.value.get_rgb_red() &gt; 130 and event.value.get_rgb_green() &lt; 140:&amp;#10;    #TXT_M.get_loudspeaker().play("26_Augenzwinkern.wav", False)&amp;#10;    TXT_M_S1_servomotor.set_position(int(330))&amp;#10;    time.sleep(1)&amp;#10;    TXT_M_S1_servomotor.set_position(int(256))&amp;#10;    display.set_attr("farbe.text", "rot")&amp;#10;if event.value.get_rgb_red() &lt; 130 and event.value.get_rgb_green() &gt; 135:&amp;#10;    #TXT_M.get_loudspeaker().play("01_Airplane.wav", False)&amp;#10;    TXT_M_S1_servomotor.set_position(int(170))&amp;#10;    time.sleep(1)&amp;#10;    TXT_M_S1_servomotor.set_position(int(256))&amp;#10;    display.set_attr("farbe.text", "grün")</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="start_block" id="EN#?qH]D99Y)Ft-2l:cb" deletable="false" x="-958" y="-268">
+    <statement name="statement">
+      <block type="loop_endless" id="u-ANDWJa9lqOg`^l/X,z">
+        <statement name="DO">
+          <block type="display_set_input_text" id="KPN%q4!|)@#1US^f@`3^">
+            <field name="instance_name">vorne</field>
+            <value name="value">
+              <shadow type="text" id="Q$2K_Fhb]*%3(s;/LwEW">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="input_ultrasonic_sensor_get_value" id="8WcJ)Mcn9Qz(S@VrjysN">
+                <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-Dr+*+`OxJsU#H9fW~U5y</field>
+              </block>
+            </value>
+            <next>
+              <block type="display_set_input_text" id="C}9X[uH5XW6U$yA/M5,k">
+                <field name="instance_name">rechts</field>
+                <value name="value">
+                  <shadow type="text" id="Q$2K_Fhb]*%3(s;/LwEW">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block type="input_ultrasonic_sensor_get_value" id=":TG~*#M!SqC]ef8uY5fd">
+                    <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-a++B9V1K@aaQkv38]Qz$</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="display_set_input_text" id="S9T)?bf)$]x|m=BvO]/$">
+                    <field name="instance_name">links</field>
+                    <value name="value">
+                      <shadow type="text" id="Q$2K_Fhb]*%3(s;/LwEW">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block type="input_ultrasonic_sensor_get_value" id="PbRc{Q[](SJ?daq@Q,Pm">
+                        <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-7L}H9c0?:#UJdm@*?:2R</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="display_set_input_text" id="q,`f|h8P1xlnA2+08!hD">
+                        <field name="instance_name">hinten</field>
+                        <value name="value">
+                          <shadow type="text" id="a;@,?+o0;yPC[2z0^]xP">
+                            <field name="TEXT">abc</field>
+                          </shadow>
+                          <block type="input_ultrasonic_sensor_get_value" id="QLw_gB^nfb_50exd~/+^">
+                            <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-A,p#7q#NrlTa8vMV7wvw</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="controls_if" id="(y^==oh7M?WOh]=s()^9">
+                            <value name="IF0">
+                              <block type="display_get_switch_state" id="YpKa#9|WMA/;kOW{L`N_">
+                                <field name="instance_name">start</field>
+                                <field name="property_name">checked</field>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="util_python" id="RQ++F}|G(Iel.TjSuF%Y">
+                                <field name="value">maxLegitDistance = 1000&amp;#10;if TXT_M_I1_ultrasonic_distance_meter.get_distance() &gt; maxLegitDistance or TXT_M_I2_ultrasonic_distance_meter.get_distance() &gt; maxLegitDistance or  TXT_M_I3_ultrasonic_distance_meter.get_distance() &gt; maxLegitDistance or TXT_M_I4_ultrasonic_distance_meter.get_distance() &gt; maxLegitDistance or TXT_M_I5_ultrasonic_distance_meter.get_distance() &gt; maxLegitDistance or TXT_M_I6_ultrasonic_distance_meter.get_distance() &gt; maxLegitDistance:&amp;#10;    print("Sensor Failed")&amp;#10;   # TXT_M.get_loudspeaker().play("02_Alarm.wav", False)</field>
+                                <next>
+                                  <block type="servomotor_set_position" id="Qw8y.^wZydV8VA}{%C:n">
+                                    <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                    <value name="position">
+                                      <shadow type="servomotor_number" id="OrCRI$lX5j3Eg/Nn/]~z">
+                                        <field name="SERVOMOTOR_NUM">256</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="motor_set_speed" id="S,-(2}g9|~(x|0!xbL;+">
+                                        <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-4M.gk+Q=#M^9SwBQ;m|=</field>
+                                        <field name="direction">Motor.CW</field>
+                                        <value name="speed">
+                                          <shadow type="motor_number" id="C:8,u~Bqw;L7bGGUUY2#">
+                                            <field name="MOTOR_NUM">325</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="servomotor_set_position" id=";F-l81CP#5rfe%N94[.k">
+                                            <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                            <value name="position">
+                                              <shadow type="servomotor_number" id="s5IyebZ]erXR@Y8QuaWM">
+                                                <field name="SERVOMOTOR_NUM">256</field>
+                                              </shadow>
+                                            </value>
+                                            <next>
+                                              <block type="controls_if" id="z?k`vcqDDKf?fR^ut!J7">
+                                                <value name="IF0">
+                                                  <block type="input_ultrasonic_sensor_if_value" id="@]Wry#w;+e]^QSR__toq">
+                                                    <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-7L}H9c0?:#UJdm@*?:2R</field>
+                                                    <field name="compare_operation">&lt;</field>
+                                                    <value name="value">
+                                                      <shadow type="math_number" id="NxG7Swh7Xh4_{+VhGeax">
+                                                        <field name="NUM">25</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO0">
+                                                  <block type="servomotor_set_position" id="zG+yO8rN-fejI$mR[/%b">
+                                                    <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                                    <value name="position">
+                                                      <shadow type="servomotor_number" id="eS+.^:K+85JwG5e/9^m7">
+                                                        <field name="SERVOMOTOR_NUM">170</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <next>
+                                                      <block type="util_wait_for" id="PFRG[NebJbcKj7JaREa@">
+                                                        <field name="format">s</field>
+                                                        <value name="value">
+                                                          <shadow type="math_number" id="AnSiRO-V(ii;TjQ}{q#^">
+                                                            <field name="NUM">1</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <next>
+                                                          <block type="servomotor_set_position" id="PcBm9`!*7N]d`Q^24Y[W">
+                                                            <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                                            <value name="position">
+                                                              <shadow type="servomotor_number" id=":$yNIzoK%,yvdfb,r}3L">
+                                                                <field name="SERVOMOTOR_NUM">256</field>
+                                                              </shadow>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="controls_if" id="u%f5@#sy-v!]_WltSGae">
+                                                    <value name="IF0">
+                                                      <block type="input_ultrasonic_sensor_if_value" id="A:L$L9DVM4.OZ=5/She=">
+                                                        <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-a++B9V1K@aaQkv38]Qz$</field>
+                                                        <field name="compare_operation">&lt;</field>
+                                                        <value name="value">
+                                                          <shadow type="math_number" id="K;|E$zy$dt[|y8gF$+Gp">
+                                                            <field name="NUM">25</field>
+                                                          </shadow>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <statement name="DO0">
+                                                      <block type="servomotor_set_position" id="u:1mKst5*RY4f8kx)7W-">
+                                                        <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                                        <value name="position">
+                                                          <shadow type="servomotor_number" id="1fdAM(`*ddxpj#-a}|*Q">
+                                                            <field name="SERVOMOTOR_NUM">330</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <next>
+                                                          <block type="util_wait_for" id="TT2lIpe`f;_^6uFkm.1a">
+                                                            <field name="format">s</field>
+                                                            <value name="value">
+                                                              <shadow type="math_number" id="?_g1I42D+7{PaTv+^X%L">
+                                                                <field name="NUM">1</field>
+                                                              </shadow>
+                                                            </value>
+                                                            <next>
+                                                              <block type="servomotor_set_position" id="%_%chd`7J,ywZ2H#jwGy">
+                                                                <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                                                <value name="position">
+                                                                  <shadow type="servomotor_number" id="5tp*rkStVDDo//RMQg4t">
+                                                                    <field name="SERVOMOTOR_NUM">256</field>
+                                                                  </shadow>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </statement>
+                                                    <next>
+                                                      <block type="controls_if" id="_5pUP7mW^ng*9/h0~6jV">
+                                                        <value name="IF0">
+                                                          <block type="input_ultrasonic_sensor_if_value" id="1zEYAT6hR%czAwTV2TIG">
+                                                            <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-Dr+*+`OxJsU#H9fW~U5y</field>
+                                                            <field name="compare_operation">&lt;</field>
+                                                            <value name="value">
+                                                              <shadow type="math_number" id="6Pn.982?fe8e!h4tXD.`">
+                                                                <field name="NUM">83</field>
+                                                              </shadow>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO0">
+                                                          <block type="controls_if" id="_6ExBF7sIbXUAS;TP|NR">
+                                                            <mutation elseif="0" else="1"/>
+                                                            <value name="IF0">
+                                                              <block type="input_ultrasonic_sensor_if_value" id="QA52t2~w9;d9qL7YVg;[">
+                                                                <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-a++B9V1K@aaQkv38]Qz$</field>
+                                                                <field name="compare_operation">&lt;</field>
+                                                                <value name="value">
+                                                                  <shadow type="math_number" id="j{]X`kqj#r.d3MHFT)p=">
+                                                                    <field name="NUM">0</field>
+                                                                  </shadow>
+                                                                  <block type="input_ultrasonic_sensor_get_value" id="ts+T1=dD8hkT%d]I$aD6">
+                                                                    <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-7L}H9c0?:#UJdm@*?:2R</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO0">
+                                                              <block type="servomotor_set_position" id="O2EY{lMKtpXlCB_,=zau">
+                                                                <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                                                <value name="position">
+                                                                  <shadow type="servomotor_number" id="H]gGp#.`}v/c-/?Hb6^y">
+                                                                    <field name="SERVOMOTOR_NUM">330</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="util_wait_for" id="Fh{7F-V?c]B7b`dfJb7x">
+                                                                    <field name="format">s</field>
+                                                                    <value name="value">
+                                                                      <shadow type="math_number" id="1QNS76}c8i!W.4wxwMnc">
+                                                                        <field name="NUM">1</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="servomotor_set_position" id="`zQOuhg49Ep^bXSHZI0w">
+                                                                        <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                                                        <value name="position">
+                                                                          <shadow type="servomotor_number" id="Zn,m|3D:#e??lz{5gBCV">
+                                                                            <field name="SERVOMOTOR_NUM">256</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </statement>
+                                                            <statement name="ELSE">
+                                                              <block type="servomotor_set_position" id="#0T6*On0}=u!i32/Y[,C">
+                                                                <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                                                <value name="position">
+                                                                  <shadow type="servomotor_number" id="`7kVDrr?*-TMyseH8x#d">
+                                                                    <field name="SERVOMOTOR_NUM">170</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="util_wait_for" id="ZH]O%JE`h7sm{u!4C7wW">
+                                                                    <field name="format">s</field>
+                                                                    <value name="value">
+                                                                      <shadow type="math_number" id="aQAicomXp_NW#zM{GJqV">
+                                                                        <field name="NUM">1</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="servomotor_set_position" id="6+0Um){JNT,7^ok6ht!W">
+                                                                        <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                                                        <value name="position">
+                                                                          <shadow type="servomotor_number" id="_oYobD)g^Q*J/.[`XBO=">
+                                                                            <field name="SERVOMOTOR_NUM">256</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </statement>
+                                                          </block>
+                                                        </statement>
+                                                        <next>
+                                                          <block type="controls_if" id="XTOYnCP@kS7`dz|qp;)c">
+                                                            <comment pinned="false" h="80" w="160">Vorne und Vorne Schräg</comment>
+                                                            <value name="IF0">
+                                                              <block type="logic_operation" id="yv6uM/t2p,q!6+*qHRev">
+                                                                <field name="OP">OR</field>
+                                                                <value name="A">
+                                                                  <block type="input_ultrasonic_sensor_if_value" id="m@,*H=5_onQ`h2l4^NZ+">
+                                                                    <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-Dr+*+`OxJsU#H9fW~U5y</field>
+                                                                    <field name="compare_operation">&lt;</field>
+                                                                    <value name="value">
+                                                                      <shadow type="math_number" id="w;BIe%J+2MS)zP)}#f(c">
+                                                                        <field name="NUM">30</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="logic_operation" id="IA/cvC?|R%XP=ll*%j(B">
+                                                                    <field name="OP">OR</field>
+                                                                    <value name="A">
+                                                                      <block type="input_ultrasonic_sensor_if_value" id="v}+DNfsL#I#k4@k#Pr#V">
+                                                                        <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-Sp+~DN_*NjX!S0agiFO?</field>
+                                                                        <field name="compare_operation">&lt;</field>
+                                                                        <value name="value">
+                                                                          <shadow type="math_number" id="I)xIvNC*$6t~@wuM+NcV">
+                                                                            <field name="NUM">15</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="input_ultrasonic_sensor_if_value" id="65:z)j*S%GEd2stlFEil">
+                                                                        <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-Ieg8j+|=Q,XrX6a%65/P</field>
+                                                                        <field name="compare_operation">&lt;</field>
+                                                                        <value name="value">
+                                                                          <shadow type="math_number" id="8DOBc?Z.E@Ryc?_NLf//">
+                                                                            <field name="NUM">15</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO0">
+                                                              <block type="motor_set_speed" id="YjXT{q|gLoEb0D/lylD.">
+                                                                <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-4M.gk+Q=#M^9SwBQ;m|=</field>
+                                                                <field name="direction">Motor.CW</field>
+                                                                <value name="speed">
+                                                                  <shadow type="motor_number" id="2pi9l,qzXJy?OCR1[1gn">
+                                                                    <field name="MOTOR_NUM">0</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="motor_set_speed" id="lY0DZ?0o/p~Koi}jf9ur">
+                                                                    <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-4M.gk+Q=#M^9SwBQ;m|=</field>
+                                                                    <field name="direction">Motor.CCW</field>
+                                                                    <value name="speed">
+                                                                      <shadow type="motor_number" id=",bxe*S;]jvtsA+v4|+*?">
+                                                                        <field name="MOTOR_NUM">325</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="servomotor_set_position" id="JagoUInL3N1U5v?=[Y$V">
+                                                                        <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                                                        <value name="position">
+                                                                          <shadow type="servomotor_number" id="Er*l1p+rI)3hzuR/cCv]">
+                                                                            <field name="SERVOMOTOR_NUM">256</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="util_wait_for" id="i8j1V^q3JPXupBU[UEg8">
+                                                                            <field name="format">s</field>
+                                                                            <value name="value">
+                                                                              <shadow type="math_number" id="x-`?x/6EIo+jvLAMM7-}">
+                                                                                <field name="NUM">1</field>
+                                                                              </shadow>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="controls_if" id="biD?aEzr+]cGSifFUQY^">
+                                                                                <mutation elseif="0" else="1"/>
+                                                                                <value name="IF0">
+                                                                                  <block type="input_ultrasonic_sensor_if_value" id="TX;l3GQ|8BtS8*WghdS;">
+                                                                                    <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-a++B9V1K@aaQkv38]Qz$</field>
+                                                                                    <field name="compare_operation">&lt;</field>
+                                                                                    <value name="value">
+                                                                                      <shadow type="math_number" id="j{]X`kqj#r.d3MHFT)p=">
+                                                                                        <field name="NUM">0</field>
+                                                                                      </shadow>
+                                                                                      <block type="input_ultrasonic_sensor_get_value" id="MWgtu#VT;F@w)Od3S#Re">
+                                                                                        <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-7L}H9c0?:#UJdm@*?:2R</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <statement name="DO0">
+                                                                                  <block type="servomotor_set_position" id="s2rsxQc`x!o7xEu;4O=9">
+                                                                                    <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                                                                    <value name="position">
+                                                                                      <shadow type="servomotor_number" id="s?g`o2@)P{]CKc`lM}cN">
+                                                                                        <field name="SERVOMOTOR_NUM">170</field>
+                                                                                      </shadow>
+                                                                                    </value>
+                                                                                    <next>
+                                                                                      <block type="util_wait_for" id="PV+htZ6|fSZ8t`BWr.Ml">
+                                                                                        <field name="format">s</field>
+                                                                                        <value name="value">
+                                                                                          <shadow type="math_number" id=";#DVddVl`X,We63pm,;V">
+                                                                                            <field name="NUM">1</field>
+                                                                                          </shadow>
+                                                                                        </value>
+                                                                                        <next>
+                                                                                          <block type="servomotor_set_position" id="d4`lJ*(Ii+=j)J;l.[|9">
+                                                                                            <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                                                                            <value name="position">
+                                                                                              <shadow type="servomotor_number" id="IAX`.vM/33ZQ((:G_v**">
+                                                                                                <field name="SERVOMOTOR_NUM">256</field>
+                                                                                              </shadow>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </statement>
+                                                                                <statement name="ELSE">
+                                                                                  <block type="servomotor_set_position" id="Fj(8c-/SX%`)t,Tn{j+;">
+                                                                                    <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                                                                    <value name="position">
+                                                                                      <shadow type="servomotor_number" id="?y`4xIzKhjGC^X9/2=qI">
+                                                                                        <field name="SERVOMOTOR_NUM">330</field>
+                                                                                      </shadow>
+                                                                                    </value>
+                                                                                    <next>
+                                                                                      <block type="util_wait_for" id="cqI%n!#g$pcYbibls.~^">
+                                                                                        <field name="format">s</field>
+                                                                                        <value name="value">
+                                                                                          <shadow type="math_number" id="pbY[enQeKZU|5.A%;9Do">
+                                                                                            <field name="NUM">1</field>
+                                                                                          </shadow>
+                                                                                        </value>
+                                                                                        <next>
+                                                                                          <block type="servomotor_set_position" id="794Cmy2xS3agCIH3WPfN">
+                                                                                            <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-GnO*2cxa--i`m)B[Rb^i</field>
+                                                                                            <value name="position">
+                                                                                              <shadow type="servomotor_number" id="A%@6H)1z|S_m!{U:Xq]Q">
+                                                                                                <field name="SERVOMOTOR_NUM">256</field>
+                                                                                              </shadow>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </statement>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </statement>
+                                                            <next>
+                                                              <block type="controls_if" id="6K/[F*rP`0{OFe)o@zh.">
+                                                                <value name="IF0">
+                                                                  <block type="input_ultrasonic_sensor_if_value" id="~g7N}^+p$sAXh2%#+hQp">
+                                                                    <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-A,p#7q#NrlTa8vMV7wvw</field>
+                                                                    <field name="compare_operation">&lt;</field>
+                                                                    <value name="value">
+                                                                      <shadow type="math_number" id="zCm++YmG4+3}h5TsYpBf">
+                                                                        <field name="NUM">15</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <statement name="DO0">
+                                                                  <block type="motor_set_speed" id="jZ]d~dR$9[71:}=3st~Q">
+                                                                    <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-4M.gk+Q=#M^9SwBQ;m|=</field>
+                                                                    <field name="direction">Motor.CCW</field>
+                                                                    <value name="speed">
+                                                                      <shadow type="motor_number" id="fZ_(v8Jc[Fz9q!e7vprK">
+                                                                        <field name="MOTOR_NUM">0</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="util_wait_for" id="2%FV{-PP#h~Yx$bH0m{T">
+                                                                        <field name="format">s</field>
+                                                                        <value name="value">
+                                                                          <shadow type="math_number" id="./sKgRHn.m~z]5r~,^?v">
+                                                                            <field name="NUM">1</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="motor_set_speed" id="{Uh_T8k3TSq|_8i8E7m4">
+                                                                            <field name="instance_name">vsV@vv?]tf-=qGMa4]}Q-4M.gk+Q=#M^9SwBQ;m|=</field>
+                                                                            <field name="direction">Motor.CW</field>
+                                                                            <value name="speed">
+                                                                              <shadow type="motor_number" id="O1HLqtvkNw:]%U-r_OX:">
+                                                                                <field name="MOTOR_NUM">325</field>
+                                                                              </shadow>
+                                                                            </value>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </statement>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="sound_play_audio_file" id="`oj`)26UfPol1!0q__FK" disabled="true" x="-769" y="688">
+    <field name="soundfile_name">02_Alarm.wav</field>
+    <field name="checkbox">FALSE</field>
+  </block>
+</xml>

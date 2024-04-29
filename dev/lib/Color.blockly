@@ -1,0 +1,5 @@
+<xml xmlns="https://developers.google.com/blockly/xml" version="15">
+  <block type="camera_on_color_detected" id="}pyg=y.%mo+rQ?]N$-?v" x="-81" y="-116">
+    <field name="instance_name">color_detector</field>
+  </block>
+</xml>

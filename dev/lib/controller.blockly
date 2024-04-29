@@ -1,0 +1,67 @@
+<xml xmlns="https://developers.google.com/blockly/xml" version="15">
+  <block type="txt4_controller" id="vsV@vv?]tf-=qGMa4]}Q" x="18" y="8">
+    <mutation>
+      <arg type="Input" name="Input-0" value="I1"/>
+      <arg type="Input" name="Input-1" value="I2"/>
+      <arg type="Input" name="Input-2" value="I3"/>
+      <arg type="Input" name="Input-3" value="I4"/>
+      <arg type="Input" name="Input-4" value="I5"/>
+      <arg type="Input" name="Input-5" value="I6"/>
+      <arg type="Input" name="Input-6" value="-"/>
+      <arg type="Output" name="Output-0" value="-"/>
+      <arg type="Motor" name="Motor-0" value="M1"/>
+      <arg type="Motor" name="Motor-1" value="-"/>
+      <arg type="Servomotor" name="Servomotor-0" value="S1"/>
+      <arg type="Servomotor" name="Servomotor-1" value="-"/>
+      <arg type="Counter" name="Counter-0" value="-"/>
+      <arg type="I2C" name="I2C-0" value="-"/>
+      <arg type="USB" name="USB-0" value="USB1_1"/>
+      <arg type="USB" name="USB-1" value="-"/>
+    </mutation>
+    <field name="mode">0</field>
+    <field name="controller_name">TXT</field>
+    <field name="Input-0">I1</field>
+    <field name="Input-1">I2</field>
+    <field name="Input-2">I3</field>
+    <field name="Input-3">I4</field>
+    <field name="Input-4">I5</field>
+    <field name="Input-5">I6</field>
+    <field name="Input-6">-</field>
+    <field name="Output-0">-</field>
+    <field name="Motor-0">M1</field>
+    <field name="Motor-1">-</field>
+    <field name="Servomotor-0">S1</field>
+    <field name="Servomotor-1">-</field>
+    <field name="Counter-0">-</field>
+    <field name="I2C-0">-</field>
+    <field name="USB-0">USB1_1</field>
+    <field name="USB-1">-</field>
+    <value name="Input-0">
+      <block type="ultrasonic_distance_meter" id="Dr+*+`OxJsU#H9fW~U5y"/>
+    </value>
+    <value name="Input-1">
+      <block type="ultrasonic_distance_meter" id="7L}H9c0?:#UJdm@*?:2R"/>
+    </value>
+    <value name="Input-2">
+      <block type="ultrasonic_distance_meter" id="a++B9V1K@aaQkv38]Qz$"/>
+    </value>
+    <value name="Input-3">
+      <block type="ultrasonic_distance_meter" id="A,p#7q#NrlTa8vMV7wvw"/>
+    </value>
+    <value name="Input-4">
+      <block type="ultrasonic_distance_meter" id="Sp+~DN_*NjX!S0agiFO?"/>
+    </value>
+    <value name="Input-5">
+      <block type="ultrasonic_distance_meter" id="Ieg8j+|=Q,XrX6a%65/P"/>
+    </value>
+    <value name="Motor-0">
+      <block type="motor" id="4M.gk+Q=#M^9SwBQ;m|="/>
+    </value>
+    <value name="Servomotor-0">
+      <block type="servomotor" id="GnO*2cxa--i`m)B[Rb^i"/>
+    </value>
+    <value name="USB-0">
+      <block type="camera" id="Lr%kq/7tlV$Ra/l42k~:"/>
+    </value>
+  </block>
+</xml>
