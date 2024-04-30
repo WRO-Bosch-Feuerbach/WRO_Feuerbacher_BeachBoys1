@@ -21,7 +21,6 @@ def color_callback(event):
             display.set_attr("farbe.text", "grün")
     print("farbe!!!")
 
-
 color_detector.add_detection_listener(color_callback)
 
 
