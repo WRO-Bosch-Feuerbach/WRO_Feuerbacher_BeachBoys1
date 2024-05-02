@@ -1,7 +1,19 @@
 ## WRO_Feuerbacher_BeachBoys1
-WRO Repo von Team 1 Bosch Feuerbach
+WRO Repository of Team 1 Bosch Feuerbach
 
+---
 
-### Read the [Documentation](./DOCUMENTATION.md):
+#### Members:
+ - [Robon Kaiser (PEA6-Fe-Fi)](mailto:Robin.Kaiser@de.bosch.com)
+ - [Jonathan Zimmer (PEA6-Fe-Fi)](mailto:Jonathan.Zimmer@de.bosch.com)
+ - [Erik Reichelt (PEA2-Fe-EGS2)](mailto:Erik.Reichelt@de.bosch.com)
+ 
+---
 
-### Take a look at our [Code](./dev/drive.py):
+### Quicklinks:
+- #### Read the [Documentation](./DOCUMENTATION.md):
+
+- #### Take a look at our [Code](./CODE.md):
+
+- #### Watch the [Videos](./VIDEOS.md)
+ 

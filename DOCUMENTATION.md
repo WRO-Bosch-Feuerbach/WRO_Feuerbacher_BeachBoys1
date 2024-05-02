@@ -17,3 +17,4 @@ ENG/EN
 | Servo | Steering |
 | Encoder Motor | Driving |
 | TXT 4.0 Controller | (partly) controlls the Robot |
+| Battery (8,4v) | Power for Controller and Motors |
