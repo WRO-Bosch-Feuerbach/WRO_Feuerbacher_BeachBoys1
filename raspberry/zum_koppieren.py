@@ -30,7 +30,7 @@ cv2.createTrackbar('G Val Min', 'Einstellungen', 100, 255, nothing)
 cv2.createTrackbar('G Val Max', 'Einstellungen', 255, 255, nothing)
 
 # Kamera öffnen
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 # Zeitpunkte für Timer für grüne und rote Erkennung
 green_timer, red_timer = 0, 0
