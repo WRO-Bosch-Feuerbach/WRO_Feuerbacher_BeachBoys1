@@ -22,6 +22,7 @@ ENG/EN
 | Battery (8,4v) | Power for Controller and Motors |
 
 #### Paspberry Pi Parts:
+
 | Part Name | Function |
 |-|-|
 | Raspberry Pi 4 (4GB)| Image processing and pathfinding|
