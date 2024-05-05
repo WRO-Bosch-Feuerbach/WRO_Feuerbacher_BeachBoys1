@@ -57,7 +57,7 @@ cv2.createTrackbar('B Val Min', 'Einstellungen', settings.get('r_val_min', 0), 2
 cv2.createTrackbar('B Val Max', 'Einstellungen', settings.get('r_val_max', 50), 255, nothing)
 
 # Kamera öffnen
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 while True:
     # Bild von der Kamera einlesen
