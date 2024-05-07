@@ -16,4 +16,3 @@ WRO Repository of Team 1 Bosch Feuerbach
 - #### Take a look at our [Code](./CODE.md):
 
 - #### Watch the [Videos](./VIDEOS.md)
- 
