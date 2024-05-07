@@ -10,7 +10,8 @@ def nothing(x):
     pass
 
 # Fenster für Trackbars erstellen
-cv2.namedWindow('Einstellungen')
+cv2.namedWindow('Einstellungen', cv2.WINDOW_NORMAL)
+cv2.resizeWindow('Einstellungen', 600, 400)
 
 # Trackbars für Rotbereich
 cv2.createTrackbar('R Hue Min', 'Einstellungen', 0, 179, nothing)
@@ -28,8 +29,17 @@ cv2.createTrackbar('G Sat Max', 'Einstellungen', 255, 255, nothing)
 cv2.createTrackbar('G Val Min', 'Einstellungen', 100, 255, nothing)
 cv2.createTrackbar('G Val Max', 'Einstellungen', 255, 255, nothing)
 
+# Funktion, um die Kamera zu überprüfen
+def check_cam_device():
+    if cv2.VideoCapture(1):
+        print("externe kammera")
+        return cv2.VideoCapture(1)
+    elif cv2.VideoCapture(0):
+        print("interne kammera")
+        return cv2.VideoCapture(0)
+
 # Kamera öffnen
-cap = cv2.VideoCapture(0)
+cap = check_cam_device()
 
 while True:
     # Bild von der Kamera einlesen
