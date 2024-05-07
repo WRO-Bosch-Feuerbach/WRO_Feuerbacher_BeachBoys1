@@ -5,9 +5,9 @@ ENG/EN
 ---
 
 ## Members and Roles:
-
-|Robin Kaiser (PEA6-Fe-Fi)|Dev & Builder|
+|Name|Role|
 |-|-|
+|Robin Kaiser (PEA6-Fe-Fi)|Dev & Builder|
 |Jonathan Zimmer (PEA6-Fe-Fi)|Dev|
 |Erik Reichelt (PEA2-Fe-EGS2)|Builder|
 
