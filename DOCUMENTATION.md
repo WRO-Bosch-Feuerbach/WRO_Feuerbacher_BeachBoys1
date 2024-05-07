@@ -21,7 +21,7 @@ Weitere Information zu genauer Funktion und Integration [hier](#energie--sensore
 
 ### Motorisierung
 Die Motorisierung des Roboters besteht aus zwei Bestandteilen:
-1. Encoder Motor (Fischertechnik)
+1. Encoder Motor (Fischertechnik): Dieser wird zum Antrieb eines Differentialgetriebes genutzt was wirderum die Hinterachse(n) antreibt
 
 ### Energie & Sensoren
 Für die Stromversorgung wird ein 8,4V 1800mAh Fischertechnik Akku verwendet. Es werden insgesamt 6 Ultraschallsensoren und eine Kamera verwendet. Die Ultraschallsensoren messen die Abstände zur nächsten Wand, mit der Kamera soll eine Farberkennung durchgeführt werden.
