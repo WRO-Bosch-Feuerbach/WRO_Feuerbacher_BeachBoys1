@@ -11,8 +11,10 @@ WRO Repository of Team 1 Bosch Feuerbach
 ---
 
 ### Quicklinks:
-- #### Read the [Documentation](./DOCUMENTATION.md):
+- #### Pleas read and Respect our [License]()
 
-- #### Take a look at our [Code](./CODE.md):
+- #### Read the [Documentation](./DOCUMENTATION.md)
+
+- #### Take a look at our [Code](./CODE.md)
 
 - #### Watch the [Videos](./VIDEOS.md)
