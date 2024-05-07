@@ -21,9 +21,5 @@ ENG/EN
 | TXT 4.0 Controller | (partly) controlls the Robot |
 | Battery (8,4v) | Power for Controller and Motors |
 
-#### Paspberry Pi Parts:
+### Motorisierung
 
-| Part Name | Function |
-|-|-|
-| Raspberry Pi 4 (4GB)| Image processing and pathfinding|
-| Raspberry Pi Case | Enclosure and cooling for Raspberry Pi| 
