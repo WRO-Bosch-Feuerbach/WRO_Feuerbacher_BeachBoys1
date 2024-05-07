@@ -11,7 +11,7 @@ WRO Repository of Team 1 Bosch Feuerbach
 ---
 
 ### Quicklinks:
-- #### Pleas read and Respect our [License]()
+- #### Pleas read and Respect our [License](./License)
 
 - #### Read the [Documentation](./DOCUMENTATION.md)
 
