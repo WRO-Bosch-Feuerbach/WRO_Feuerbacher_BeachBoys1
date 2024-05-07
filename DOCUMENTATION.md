@@ -16,6 +16,7 @@
 | Encoder Motor | Antrieb der Hinterachse (mit Differentialgetriebe) |
 | TXT 4.0 Controller | STeuerung des Roboters |
 | Batterie (8,4v) | Stromversorgung des Roboters und seiner Bestandteile |
+
 Weitere Information zu genauer Funktion und Integration [hier](#energie--sensoren) und [hier](#motorisierung)
 
 ### Motorisierung
