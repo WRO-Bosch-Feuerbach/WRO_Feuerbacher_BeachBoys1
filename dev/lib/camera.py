@@ -8,6 +8,6 @@ TXT_M_USB1_1_camera.set_width(320)
 TXT_M_USB1_1_camera.set_fps(30)
 TXT_M_USB1_1_camera.start()
 
-color_detector = txt_factory.camera_factory.create_color_detector(18, 25, 295, 124, 1)
+color_detector = txt_factory.camera_factory.create_color_detector(15, 32, 295, 124, 1)
 TXT_M_USB1_1_camera.add_detector(color_detector)
 

@@ -1,1 +1,1 @@
-<xml type="camera" version="2" name="TXT_M_USB1_1_camera" rotate="0" height="240" width="320" fps="30"><item id="2" class="ColorDetector"><name>color_detector</name><contrast>1</contrast><geometry><x>18</x><y>25</y><width>295</width><height>124</height></geometry></item></xml>
+<xml type="camera" version="2" name="TXT_M_USB1_1_camera" rotate="0" height="240" width="320" fps="30"><item id="2" class="ColorDetector"><name>color_detector</name><contrast>1</contrast><geometry><x>15</x><y>32</y><width>295</width><height>124</height></geometry></item></xml>

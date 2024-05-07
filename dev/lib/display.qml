@@ -11,179 +11,19 @@ TXTWindow {
     color: "grey"
     anchors.fill: parent
   }
-  TXTInput {
-    id: txt_input
-    text: "hello"
-    onTextChanged: label1.text = txt_input.text
-    font.pixelSize: 22
-    font.bold: false
-    font.italic: false
-    font.underline: false
-    horizontalAlignment: Text.AlignLeft
-    color: "#444444"
-    elide: Text.ElideRight
-    x: 107
-    y: 10
-    width: 100
-    height: 40
-  }
-  TXTInput {
-    id: txt_input2
-    text: "Farbe:"
-    onTextChanged: label1.text = txt_input2.text
-    font.pixelSize: 22
-    font.bold: false
-    font.italic: false
-    font.underline: false
-    horizontalAlignment: Text.AlignLeft
-    color: "#444444"
-    elide: Text.ElideRight
-    x: 5
-    y: 12
-    width: 100
-    height: 40
-  }
-  TXTInput {
-    id: txt_input3
-    text: "vorne"
-    onTextChanged: label1.text = txt_input3.text
-    font.pixelSize: 22
-    font.bold: false
-    font.italic: false
-    font.underline: false
-    horizontalAlignment: Text.AlignLeft
-    color: "#444444"
-    elide: Text.ElideRight
-    x: 4
-    y: 62
-    width: 100
-    height: 40
-  }
-  TXTInput {
-    id: vorne
-    text: "hello"
-    onTextChanged: label1.text = vorne.text
-    font.pixelSize: 22
-    font.bold: false
-    font.italic: false
-    font.underline: false
-    horizontalAlignment: Text.AlignLeft
-    color: "#444444"
-    elide: Text.ElideRight
-    x: 108
-    y: 62
-    width: 100
-    height: 40
-  }
-  TXTInput {
-    id: rechts
-    text: "hello"
-    onTextChanged: label1.text = rechts.text
-    font.pixelSize: 22
-    font.bold: false
-    font.italic: false
-    font.underline: false
-    horizontalAlignment: Text.AlignLeft
-    color: "#444444"
-    elide: Text.ElideRight
-    x: 58
-    y: 109
-    width: 54
-    height: 40
-  }
-  TXTInput {
-    id: links
-    text: "hello"
-    onTextChanged: label1.text = links.text
-    font.pixelSize: 22
-    font.bold: false
-    font.italic: false
-    font.underline: false
-    horizontalAlignment: Text.AlignLeft
-    color: "#444444"
-    elide: Text.ElideRight
-    x: 170
-    y: 111
-    width: 49
-    height: 40
-  }
-  TXTInput {
-    id: txt_input32
-    text: "rechts"
-    onTextChanged: label1.text = txt_input32.text
-    font.pixelSize: 22
-    font.bold: false
-    font.italic: false
-    font.underline: false
-    horizontalAlignment: Text.AlignLeft
-    color: "#444444"
-    elide: Text.ElideRight
-    x: 4
-    y: 109
-    width: 50
-    height: 40
-  }
-  TXTInput {
-    id: txt_input33
-    text: "links"
-    onTextChanged: label1.text = txt_input33.text
-    font.pixelSize: 22
-    font.bold: false
-    font.italic: false
-    font.underline: false
-    horizontalAlignment: Text.AlignLeft
-    color: "#444444"
-    elide: Text.ElideRight
-    x: 123
-    y: 107
-    width: 40
-    height: 40
-  }
-  TXTInput {
-    id: hinten
-    text: "hello"
-    onTextChanged: label1.text = hinten.text
-    font.pixelSize: 22
-    font.bold: false
-    font.italic: false
-    font.underline: false
-    horizontalAlignment: Text.AlignLeft
-    color: "#444444"
-    elide: Text.ElideRight
-    x: 4
-    y: 154
-    width: 100
-    height: 40
-  }
-  TXTInput {
-    id: farbe
-    text: "Farbe"
-    onTextChanged: label1.text = farbe.text
-    font.pixelSize: 22
-    font.bold: false
-    font.italic: false
-    font.underline: false
-    horizontalAlignment: Text.AlignLeft
-    color: "#444444"
-    elide: Text.ElideRight
-    x: 14
-    y: 190
-    width: 100
-    height: 40
-  }
   TXTCheckBox {
     id: txt_checkbox
-    text: "Color Detection"
+    text: "Color"
     font.pixelSize: 22
     font.bold: false
     font.italic: false
     font.underline: false
     checked: false
     enabled: true
-    x: 112
-    y: 150
-    width: 119
-    height: 40
+    x: 68
+    y: 156
+    width: 105
+    height: 35
   }
   TXTSwitch {
     id: start
@@ -194,9 +34,189 @@ TXTWindow {
     font.underline: false
     enabled: true
     checked: false
-    x: 124
-    y: 190
+    x: 70
+    y: 189
     width: 100
+    height: 40
+  }
+  TXTLabel {
+    id: i1L
+    text: "I1 V"
+    font.pixelSize: 16
+    font.bold: false
+    font.italic: false
+    font.underline: false
+    horizontalAlignment: Text.AlignLeft
+    color: "#ffffff"
+    elide: Text.ElideRight
+    x: 9
+    y: 13
+    width: 24
+    height: 40
+  }
+  TXTLabel {
+    id: i1Valie
+    text: "hello"
+    font.pixelSize: 16
+    font.bold: false
+    font.italic: false
+    font.underline: false
+    horizontalAlignment: Text.AlignLeft
+    color: "#ffffff"
+    elide: Text.ElideRight
+    x: 44
+    y: 13
+    width: 47
+    height: 40
+  }
+  TXTLabel {
+    id: i2L
+    text: "I2 R"
+    font.pixelSize: 16
+    font.bold: false
+    font.italic: false
+    font.underline: false
+    horizontalAlignment: Text.AlignLeft
+    color: "#ffffff"
+    elide: Text.ElideRight
+    x: 107
+    y: 14
+    width: 24
+    height: 40
+  }
+  TXTLabel {
+    id: i2Value
+    text: "hello"
+    font.pixelSize: 16
+    font.bold: false
+    font.italic: false
+    font.underline: false
+    horizontalAlignment: Text.AlignLeft
+    color: "#ffffff"
+    elide: Text.ElideRight
+    x: 144
+    y: 13
+    width: 47
+    height: 40
+  }
+  TXTLabel {
+    id: i4Value
+    text: "hello"
+    font.pixelSize: 16
+    font.bold: false
+    font.italic: false
+    font.underline: false
+    horizontalAlignment: Text.AlignLeft
+    color: "#ffffff"
+    elide: Text.ElideRight
+    x: 144
+    y: 65
+    width: 47
+    height: 40
+  }
+  TXTLabel {
+    id: i2L2
+    text: "I4 H"
+    font.pixelSize: 16
+    font.bold: false
+    font.italic: false
+    font.underline: false
+    horizontalAlignment: Text.AlignLeft
+    color: "#ffffff"
+    elide: Text.ElideRight
+    x: 106
+    y: 68
+    width: 24
+    height: 40
+  }
+  TXTLabel {
+    id: i3Value
+    text: "hello"
+    font.pixelSize: 16
+    font.bold: false
+    font.italic: false
+    font.underline: false
+    horizontalAlignment: Text.AlignLeft
+    color: "#ffffff"
+    elide: Text.ElideRight
+    x: 38
+    y: 68
+    width: 47
+    height: 40
+  }
+  TXTLabel {
+    id: i1L2
+    text: "I3 VR"
+    font.pixelSize: 16
+    font.bold: false
+    font.italic: false
+    font.underline: false
+    horizontalAlignment: Text.AlignLeft
+    color: "#ffffff"
+    elide: Text.ElideRight
+    x: 8
+    y: 67
+    width: 30
+    height: 40
+  }
+  TXTLabel {
+    id: i1L22
+    text: "I5 VL"
+    font.pixelSize: 16
+    font.bold: false
+    font.italic: false
+    font.underline: false
+    horizontalAlignment: Text.AlignLeft
+    color: "#ffffff"
+    elide: Text.ElideRight
+    x: 10
+    y: 118
+    width: 30
+    height: 40
+  }
+  TXTLabel {
+    id: i5Value2
+    text: "hello"
+    font.pixelSize: 16
+    font.bold: false
+    font.italic: false
+    font.underline: false
+    horizontalAlignment: Text.AlignLeft
+    color: "#ffffff"
+    elide: Text.ElideRight
+    x: 40
+    y: 112
+    width: 47
+    height: 40
+  }
+  TXTLabel {
+    id: i2L22
+    text: "I6 VR"
+    font.pixelSize: 16
+    font.bold: false
+    font.italic: false
+    font.underline: false
+    horizontalAlignment: Text.AlignLeft
+    color: "#ffffff"
+    elide: Text.ElideRight
+    x: 106
+    y: 114
+    width: 30
+    height: 40
+  }
+  TXTLabel {
+    id: i6Valpue
+    text: "hello"
+    font.pixelSize: 16
+    font.bold: false
+    font.italic: false
+    font.underline: false
+    horizontalAlignment: Text.AlignLeft
+    color: "#ffffff"
+    elide: Text.ElideRight
+    x: 143
+    y: 110
+    width: 47
     height: 40
   }
 }
