@@ -3,11 +3,13 @@ WRO Repository of Team 1 Bosch Feuerbach
 
 ---
 
-#### Members:
+### Team:
+#### Mitglieder:
  - [Robin Kaiser (PEA6-Fe-Fi)](mailto:Robin.Kaiser@de.bosch.com)
  - [Jonathan Zimmer (PEA6-Fe-Fi)](mailto:Jonathan.Zimmer@de.bosch.com)
  - [Erik Reichelt (PEA2-Fe-EGS2)](mailto:Erik.Reichelt@de.bosch.com)
- 
+#### Coach:
+ - [Simon Becker (PEA6-Fe)](mailto:simon.becker@de.bosch.com)
 ---
 
 ### Quicklinks:
