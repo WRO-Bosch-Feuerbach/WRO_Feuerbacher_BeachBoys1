@@ -1,6 +1,6 @@
 ## WRO_Feuerbacher_BeachBoys1
 WRO Repository of Team 1 Bosch Feuerbach
-URL: https://github.com/WRO-Bosch-Feuerbach/WRO_Feuerbacher_BeachBoys1
+- URL: https://github.com/WRO-Bosch-Feuerbach/WRO_Feuerbacher_BeachBoys1
 
 ---
 
