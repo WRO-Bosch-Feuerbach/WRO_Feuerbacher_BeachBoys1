@@ -44,4 +44,15 @@ Die Farbe der Hindernisse wird von der Kamera erkannt und ausgewertet, dementspr
 ---
 
 ### Engineering und Design
-Am Anfang war das Design recht nah am originalen Fischertechnik Bausatz. Es trat das Problem auf, dass der Roboter in einem 45° Winkel an einer Wand stehen blieb. Um dieses Problem zu lösen wurden Vorne Rechts und Vorne Links zwei weitere Ultraschallsensoren schräg angebracht. Ein weiteres Problem war die niedrige Auflösung der Standard Kamera, als Lösung wurde eine neue hochauflösende Webcam montiert. Der Roboter ist schon lang nicht mehr nah am original, da er das problem hatte, dass er an einigen stellen nicht stabil genug gebaut war. Das hat zum einen die gesammte Struktur betroffen, welche sich durch das Eigengewicht nach unten durchgebogen hat, als auch das "Bauteil" rund um das Differentialgetriebe, welches sich von einer Fahrt zur nächsten immer weiter auseinander zog/drückte, so dass nach ein paar Fahrten, der Roboter schon schwierigkeiten hatte überhapt vom vorwärtsfahren ins rückwärtsfahren, über zu gehen.
+Am Anfang war das Design recht nah am originalen Fischertechnik Bausatz. Es trat das Problem auf, dass der Roboter in einem 45° Winkel an einer Wand stehen blieb. Um dieses Problem zu lösen wurden Vorne Rechts und Vorne Links zwei weitere Ultraschallsensoren schräg angebracht. Ein weiteres Problem war die niedrige Auflösung der Standard Kamera, als Lösung wurde eine neue hochauflösende Webcam montiert. Der Roboter ist schon lang nicht mehr nah am originalen Bausatz, da dieser das Problem hatte, dass er an einigen stellen nicht stabil genug gebaut war. Das hat zum einen die gesammte Struktur betroffen, welche sich durch das Eigengewicht nach unten durchgebogen hat, als auch das "Bauteil" rund um das Differentialgetriebe, welches sich von einer Fahrt zur nächsten immer weiter auseinander zog/drückte, so dass nach ein paar Fahrten, der Roboter schon schwierigkeiten hatte überhapt vom vorwärtsfahren ins rückwärts fahren, über zu gehen.
+
+---
+
+### Bilder:
+![Bild 0008](pics/IMG-20240511-WA0008.jpg) 
+![Bild 0007](pics/IMG-20240511-WA0007.jpg) 
+![Bild 0006](pics/IMG-20240511-WA0006.jpg) 
+![Bild 0004](pics/IMG-20240511-WA0004.jpg) 
+![Bild 0003](pics/IMG-20240511-WA0003.jpg) 
+![Bild 0002](pics/IMG-20240511-WA0002.jpg) 
+![Bild 0001](pics/IMG-20240511-WA0001.jpg)
