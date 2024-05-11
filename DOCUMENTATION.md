@@ -55,4 +55,4 @@ Am Anfang war das Design recht nah am originalen Fischertechnik Bausatz. Es trat
 ![Bild 0004](pics/IMG-20240511-WA0004.jpg) 
 ![Bild 0003](pics/IMG-20240511-WA0003.jpg) 
 ![Bild 0002](pics/IMG-20240511-WA0002.jpg) 
-![Bild 0001](pics/IMG-20240511-WA0001.jpg)
+
