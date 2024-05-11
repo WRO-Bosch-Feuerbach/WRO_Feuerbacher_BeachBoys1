@@ -26,5 +26,4 @@ WRO Repository of Team 1 Bosch Feuerbach
 ---
 
 ### Teambild / Teamlogo:
-<img src="./pics/IMG-20240511-WA0005.jpg" alt="Teamlogo" width="100" height="100">
-![Teamlogo](./pics/IMG-20240511-WA0005.jpg)
+<img src="./pics/IMG-20240511-WA0005.jpg" alt="Teamlogo" width="100" height="150">
